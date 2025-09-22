@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Deeply Nested Lists Assignment (ol, ul, dl)</title>
+</head>
+<body>
+
+  <!-- Top-level ordered list -->
+  <ol>
+    <li>
+      Chapter 1: Foundations
+      <!-- nested unordered list -->
+      <ul>
+        <li>
+          Section 1.1: Definitions
+          <!-- description list inside a UL item -->
+          <dl>
+            <dt>Term A</dt>
+            <dd>Definition of Term A (short).</dd>
+
+            <dt>Term B</dt>
+            <dd>
+              Definition of Term B (with nested lists to illustrate examples):
+              <!-- nested ordered list inside a DD -->
+              <ol>
+                <li>Example 1
+                  <ul>
+                    <li>Detail 1
+                      <dl>
+                        <dt>Subterm i</dt>
+                        <dd>Sub-definition i</dd>
+                        <dt>Subterm ii</dt>
+                        <dd>
+                          Sub-definition ii
+                          <!-- deeper nesting -->
+                          <ol>
+                            <li>
+                              Case A
+                              <ul>
+                                <li>Point α
+                                  <dl>
+                                    <dt>α.1</dt>
+                                    <dd>Note α.1</dd>
+                                  </dl>
+                                </li>
+                                <li>Point β</li>
+                              </ul>
+                            </li>
+                            <li>Case B</li>
+                          </ol>
+                        </dd>
+                      </dl>
+                    </li>
+                    <li>Detail 2</li>
+                  </ul>
+                </li>
+
+                <li>Example 2
+                  <ol>
+                    <li>Subexample 2.1</li>
+                    <li>Subexample 2.2
+                      <ul>
+                        <li>Leaf A</li>
+                        <li>Leaf B</li>
+                      </ul>
+                    </li>
+                  </ol>
+                </li>
+              </ol>
+            </dd>
+          </dl>
+        </li>
+
+        <li>
+          Section 1.2: Hierarchies
+          <!-- Mixed nested lists showing many levels -->
+          <ol>
+            <li>
+              Level 1
+              <ul>
+                <li>
+                  Level 2
+                  <ol>
+                    <li>
+                      Level 3
+                      <ul>
+                        <li>
+                          Level 4
+                          <dl>
+                            <dt>Concept X</dt>
+                            <dd>
+                              Explanation of X
+                              <ol>
+                                <li>
+                                  Variant X.1
+                                  <ul>
+                                    <li>Note X.1.a</li>
+                                    <li>Note X.1.b</li>
+                                  </ul>
+                                </li>
+                                <li>Variant X.2</li>
+                              </ol>
+                            </dd>
+
+                            <dt>Concept Y</dt>
+                            <dd>Short explanation of Y</dd>
+                          </dl>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>Another branch at level 3</li>
+                  </ol>
+                </li>
+              </ul>
+            </li>
+            <li>Secondary branch at level 1</li>
+          </ol>
+        </li>
+
+        <li>
+          Section 1.3: Mixed Content Examples
+          <!-- A DL used as a sibling to OL inside UL -->
+          <dl>
+            <dt>Item Set</dt>
+            <dd>
+              <ol>
+                <li>Item 1
+                  <dl>
+                    <dt>Note</dt>
+                    <dd>Important note about Item 1</dd>
+                  </dl>
+                </li>
+                <li>Item 2
+                  <ul>
+                    <li>Subitem 2.1
+                      <ol>
+                        <li>Detail 2.1.1</li>
+                        <li>Detail 2.1.2</li>
+                      </ol>
+                    </li>
+                    <li>Subitem 2.2</li>
+                  </ul>
+                </li>
+              </ol>
+            </dd>
+
+            <dt>Alternate Set</dt>
+            <dd>
+              <ul>
+                <li>Alternate A
+                  <dl>
+                    <dt>Alt-A1</dt>
+                    <dd>Alt detail A1</dd>
+                    <dt>Alt-A2</dt>
+                    <dd>
+                      Alt detail A2 (deeper nesting)
+                      <ul>
+                        <li>Point 1
+                          <ol>
+                            <li>Subpoint a</li>
+                            <li>Subpoint b</li>
+                          </ol>
+                        </li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </li>
+                <li>Alternate B</li>
+              </ul>
+            </dd>
+          </dl>
+        </li>
+      </ul>
+    </li>
+
+    <li>
+      Chapter 2: Applied Patterns
+      <ol>
+        <li>
+          Pattern 2.1: Composite Structures
+          <ul>
+            <li>
+              Composite A
+              <dl>
+                <dt>Part 1</dt>
+                <dd>
+                  <ol>
+                    <li>p1.a</li>
+                    <li>p1.b
+                      <ul>
+                        <li>p1.b.i</li>
+                        <li>p1.b.ii</li>
+                      </ul>
+                    </li>
+                  </ol>
+                </dd>
+
+                <dt>Part 2</dt>
+                <dd>Standalone note for part 2</dd>
+              </dl>
+            </li>
+
+            <li>
+              Composite B
+              <ol>
+                <li>Segment 1</li>
+                <li>Segment 2
+                  <ul>
+                    <li>Fragment α</li>
+                    <li>Fragment β
+                      <dl>
+                        <dt>β-meta</dt>
+                        <dd>
+                          Metadata list:
+                          <ol>
+                            <li>m1</li>
+                            <li>m2</li>
+                          </ol>
+                        </dd>
+                      </dl>
+                    </li>
+                  </ul>
+                </li>
+              </ol>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          Pattern 2.2: Cross-references (represented as nested list pointers)
+          <ul>
+            <li>
+              Node A references:
+              <ol>
+                <li>Node B
+                  <ul>
+                    <li>Node B.a</li>
+                    <li>Node B.b
+                      <dl>
+                        <dt>Ref</dt>
+                        <dd>See Chapter 1 → Section 1.2 → Level 4</dd>
+                      </dl>
+                    </li>
+                  </ul>
+                </li>
+                <li>Node C</li>
+              </ol>
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </li>
+
+    <li>
+      Chapter 3: Exercises & Answers
+      <ol>
+        <li>
+          Exercise 3.1 (multi-step)
+          <ul>
+            <li>Step A
+              <ol>
+                <li>Do this</li>
+                <li>Then do that
+                  <dl>
+                    <dt>Expected result</dt>
+                    <dd>Result description</dd>
+                  </dl>
+                </li>
+              </ol>
+            </li>
+            <li>Step B
+              <ul>
+                <li>Check sub-results</li>
+                <li>Document anomalies</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          Answer Key
+          <dl>
+            <dt>Q3.1.a</dt>
+            <dd>
+              <ol>
+                <li>Answer part 1</li>
+                <li>Answer part 2
+                  <ul>
+                    <li>Reasoning step i</li>
+                    <li>Reasoning step ii</li>
+                  </ul>
+                </li>
+              </ol>
+            </dd>
+
+            <dt>Q3.1.b</dt>
+            <dd>Short answer with reference: Chapter 2 → Pattern 2.1</dd>
+          </dl>
+        </li>
+      </ol>
+    </li>
+  </ol>
+
+</body>
+</html>
