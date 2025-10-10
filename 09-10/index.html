@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+   RegEx -> Regular Expression
+    <form action="" method="get" autocomplete="on">
+        <!-- <label for="fullName">Full Name</label> -->
+        <input type="text" id="fullName" value="a" placeholder="Enter Your Full Name"
+         name="fullname" maxlength="5" minlength="2" required/> <br/> <br/>
+        <!-- <label>Age</label> -->
+        <input type="number" id="age" name="age" placeholder="Age" max="9999" min="5"/>
+        <input type="password" name="password" placeholder="Enter your password" maxlength="12" minlength="8" required/>
+        <input type="email" name="email" placeholder="email@gmail.com" required/>
+        <input type="date" placeholder="Enter date of birth"
+        min="2023-10-30" max="2025-11-25"
+        />
+
+        <input type="time" required/>
+        <input type="range" min="1" max="10" step="2"/>
+        <input type="color"/>
+        <br/><br/>
+        <label for="student">Student</label>
+        <input id="student" type="radio" value="student" name="account" checked/>
+        <label for="teacher">Teacher</label>
+        <input id="teacher" type="radio" value="teacher" name="account" checked/>
+        
+       <br/> <br/>
+        <label for="english">English</label>
+       <input type="checkbox" name="subjects" id="english" />
+
+        <label for="Hindi">Hindi</label>
+       <input checked type="checkbox" name="subjects" id="Hindi" />
+
+        <label for="Maths">Maths</label>
+       <input type="checkbox" name="subjects" id="Maths" value="Maths"/>
+       
+       <br/> <br/>
+        <select name="stream" multiple>
+            <option selected disabled>Select Stream</option>
+            <option  value="Science">Science</option>
+            <option value="commerce">Commerce</option>
+            <option value="humanities">Humanities</option>
+        </select>
+        <br/> <br/>
+
+        <input type="file" multiple accept=".pdf, .docx"/>
+        <br/> <br/>
+
+        <input type="reset"/>
+        <input type="submit"/>
+    </form>
+
+
+</body>
+</html>
