@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Profile Page</title>
+  <style>
+    /* ===== Universal Selector ===== */
+    * {
+      font-family: 'Segoe UI', sans-serif;
+      transition: all 0.3s ease; /* Smooth hover animation */
+    }
+
+    /* ===== Tag Selectors ===== */
+    body {
+      background-color: #f8f9fa;
+      color: #222;
+      font-size: 16px;
+    }
+
+    h1 {
+      color: #1e90ff;
+      background-color: #e6f0ff;
+      font-size: 36px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    /* ===== ID Selectors ===== */
+    #header {
+      background-color: #cce5ff;
+      color: #003366;
+      font-size: 20px;
+      padding: 10px;
+    }
+
+    #footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      font-size: 14px;
+      padding: 10px;
+    }
+
+    /* ===== Class Selectors ===== */
+    .section {
+      background-color: #f5f5f5;
+      padding: 15px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+
+    .highlight {
+      color: #b22222;
+      background-color: #ffe4e1;
+      font-size: 20px;
+    }
+
+    .skill {
+      background-color: #fffacd;
+      font-size: 18px;
+    }
+
+    .achievement {
+      background-color: #e0ffe0;
+      color: #004d00;
+      font-size: 18px;
+    }
+
+    /* ===== Hover Interactions ===== */
+    .section:hover {
+      background-color: #e0f7fa;
+    }
+
+    .skill:hover {
+      color: #0000cd;
+      background-color: #fafad2;
+      font-size: 20px;
+    }
+
+    .achievement:hover {
+      background-color: #d0f0c0;
+      font-size: 20px;
+    }
+
+    #header:hover {
+      background-color: #99ccff;
+      color: #001f4d;
+      font-size: 22px;
+    }
+
+    #footer:hover {
+      background-color: #444;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <header id="header">
+    <h1>Priya Sharma</h1>
+    <p class="highlight">Creative Web Developer</p>
+  </header>
+
+  <section class="section" id="about">
+    <h2>About Me</h2>
+    <p>I love building interactive and user-friendly websites. My goal is to make web experiences meaningful.</p>
+  </section>
+
+  <section class="section" id="skills">
+    <h2>My Skills</h2>
+    <ul>
+      <li class="skill">HTML</li>
+      <li class="skill">CSS</li>
+      <li class="skill">JavaScript</li>
+    </ul>
+  </section>
+
+  <section class="section" id="achievements">
+    <h2>Achievements</h2>
+    <ul>
+      <li class="achievement">Winner - Web Design Challenge 2024</li>
+      <li class="achievement">Top 10 - UI Innovation Hackathon</li>
+    </ul>
+  </section>
+
+  <footer id="footer">
+    <p>Connect with me: priyasharma@example.com</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+         div h1 {
+            /* color:#afff00; */
+          
+           font-weight:900;
+           text-align:center;
+           text-decoration: underline;
+           text-transform: capitalize;
+           font-family: 'Courier New';
+          
+        }
+        /* div .greenpara{
+            color:green;
+        } */
+        p.greenpara{
+             color:green;
+        }
+        p#greenpara{
+            background-color: green;
+        }
+
+        #para.greenpara{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+     <h1 align="center">H1 <span>inside</span> div</h1>
+    <div>
+       
+        <h1>H1 <span>inside</span> div</h1>
+        <p>This is a paragrahp inside div</p>
+        <span>Span inside div</span>
+        <p class="greenpara" id="para">Second paragraph</p>
+        <h1>Second H1</h1>
+    </div>
+    <p class="greenpara">Second paragraph</p>
+    <p class="greenpara">Second paragraph</p>
+    <p id="greenpara">Second paragraph</p>
+    <h1 class="greenpara">H1 <span>outside</span> div</h1>
+</body>
+</html>
