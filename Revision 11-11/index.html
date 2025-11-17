@@ -18,7 +18,7 @@
         <input type="text" name="fullName" id="fullName" minlength="4" maxlength="7" placeholder="Enter Fullname"
             required />
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" required />
+        <!-- <input type="email" name="email" id="email" required /> -->
         <input type="password" minlength="8" maxlength="12" />
         <br /><br />
         <label>Gender:</label>
@@ -54,8 +54,8 @@
         <label for="male">Male</label>
         <br /><br />
         <br /><br />
-        <select>
-            <option value="english" selected disabled>English</option>
+        <select name="subject" required>
+            <option selected disabled>English</option>
             <option value="english">English</option>
             <option value="english">English</option>
             <option value="english">English</option>
@@ -79,6 +79,7 @@
         <br /><br />
         <input type="submit" value="Submit" />
     </form>
+    <iframe src="/print.pdf" height="450px" width="500px"></iframe>
     <!-- <div style="height:300px;width:400px; border:1px solid" contenteditable="true">
 
     </div> -->
