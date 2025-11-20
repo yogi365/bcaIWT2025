@@ -41,14 +41,15 @@
             position: relative;
         }
         .sticky{
-            /* position:sticky;
-            bottom:20px; */
+            position:sticky;
+            top:20px;
             background-color: lightgray;
+            z-index:20;
         }
         .fixed{
             background-color: cyan;
             position:fixed;
-           /* z-index:10; */
+           z-index:10;
         }
     </style>
 </head>
@@ -57,7 +58,9 @@
         <div class="div1">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptate architecto officia, alias nobis maxime atque 
     </div>
-
+<div class="sticky">
+        sticky
+    </div>
     <div class="fixed">
         fixed
     </div>
@@ -66,8 +69,10 @@
 
         <div class="div2"> absolute</div>
     </div>
-    <div class="sticky">
-        sticky
+    
+       <div class="blue-div" style="background-color: blue;">
+
+        <div class="div2"> absolute</div>
     </div>
     </section>
 
