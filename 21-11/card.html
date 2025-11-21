@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card-contianer{
+            width:350px;
+            border:1px solid black;   
+            padding:10px;    
+            text-align: center;   
+        }
+        .card-contianer img{
+            max-width:320px;
+            /* display: block; */
+            width:100%;
+            height:100%;
+            /* margin:0 auto; */
+            object-fit: contain;
+        }
+        .card-contianer a{
+            font-family: cursive;
+            padding:15px 40px;
+            background:rgb(97, 255, 97) ;
+            transition: background 0.2s ease;
+            transition:transform 0.2s ease;
+            text-decoration: none;
+            color:black;
+            display: inline-block;
+        }
+
+        .card-contianer a:hover{
+            background:rgb(1, 163, 1) ;
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+    <div class="card-contianer">
+        <img src="image.png"/>
+        <h2>Name of the article</h2>
+        <p>Some description about the article. consectetur adipisicing elit.  consequatur sunt, delectus at aperiam ex nulla dolorum rem praesentium, tempora amet assumenda!</p>
+        <a href="#">Read More</a>
+    </div>
+</body>
+</html>
